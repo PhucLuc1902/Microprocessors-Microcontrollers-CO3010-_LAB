@@ -1,0 +1,6 @@
+fsm.c:27:6:segmentUpdateAuto	8	static
+fsm.c:31:6:fsm_run	8	static
+fsm.c:37:6:mode_changing	8	static
+fsm.c:54:6:fsm_mod1_ngang	8	static
+fsm.c:127:6:fsm_mod1_doc	8	static
+fsm.c:176:6:fsm_manual	8	static

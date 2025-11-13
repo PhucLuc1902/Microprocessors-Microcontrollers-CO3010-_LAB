@@ -1,0 +1,2 @@
+retarget.c:7:5:__io_putchar	24	static
+retarget.c:13:5:_write	32	static

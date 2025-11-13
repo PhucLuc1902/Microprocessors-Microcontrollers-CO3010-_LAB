@@ -1,0 +1,4 @@
+7seg.c:27:6:set7SegNgang	24	static
+7seg.c:40:6:set7SegDoc	24	static
+7seg.c:54:6:scan7Seg	16	static
+7seg.c:78:6:updateSegment2Digits	16	static

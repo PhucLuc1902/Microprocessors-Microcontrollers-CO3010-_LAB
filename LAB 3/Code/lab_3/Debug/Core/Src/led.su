@@ -1,0 +1,2 @@
+led.c:13:6:setLedNgang	16	static
+led.c:48:6:setLedDoc	16	static

@@ -1,0 +1,246 @@
+01:54:34 **** Incremental Build of configuration Debug for project LAB 1.6.1 ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+In file included from ../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f1xx.h:128,
+                 from ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_def.h:29,
+                 from ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc.h:27,
+                 from ../Core/Inc/stm32f1xx_hal_conf.h:237,
+                 from ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h:29,
+                 from ../Core/Inc/main.h:31,
+                 from ../Core/Src/main.c:21:
+../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103x6.h:650:29: warning: initialization of 'short unsigned int' from 'GPIO_TypeDef *' {aka 'struct <anonymous> *'} makes integer from pointer without a cast [-Wint-conversion]
+  650 | #define GPIOA               ((GPIO_TypeDef *)GPIOA_BASE)
+      |                             ^
+../Core/Inc/main.h:80:23: note: in expansion of macro 'GPIOA'
+   80 | #define L10_GPIO_Port GPIOA
+      |                       ^~~~~
+../Core/Src/main.c:22:18: note: in expansion of macro 'L10_GPIO_Port'
+   22 | uint16_t leds[]={L10_GPIO_Port,L2_GPIO_Port,L3_GPIO_Port,
+      |                  ^~~~~~~~~~~~~
+../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103x6.h:650:29: note: (near initialization for 'leds[0]')
+  650 | #define GPIOA               ((GPIO_TypeDef *)GPIOA_BASE)
+      |                             ^
+../Core/Inc/main.h:80:23: note: in expansion of macro 'GPIOA'
+   80 | #define L10_GPIO_Port GPIOA
+      |                       ^~~~~
+../Core/Src/main.c:22:18: note: in expansion of macro 'L10_GPIO_Port'
+   22 | uint16_t leds[]={L10_GPIO_Port,L2_GPIO_Port,L3_GPIO_Port,
+      |                  ^~~~~~~~~~~~~
+../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103x6.h:650:29: warning: initialization of 'short unsigned int' from 'GPIO_TypeDef *' {aka 'struct <anonymous> *'} makes integer from pointer without a cast [-Wint-conversion]
+  650 | #define GPIOA               ((GPIO_TypeDef *)GPIOA_BASE)
+      |                             ^
+../Core/Inc/main.h:64:22: note: in expansion of macro 'GPIOA'
+   64 | #define L2_GPIO_Port GPIOA
+      |                      ^~~~~
+../Core/Src/main.c:22:32: note: in expansion of macro 'L2_GPIO_Port'
+   22 | uint16_t leds[]={L10_GPIO_Port,L2_GPIO_Port,L3_GPIO_Port,
+      |                                ^~~~~~~~~~~~
+../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103x6.h:650:29: note: (near initialization for 'leds[1]')
+  650 | #define GPIOA               ((GPIO_TypeDef *)GPIOA_BASE)
+      |                             ^
+../Core/Inc/main.h:64:22: note: in expansion of macro 'GPIOA'
+   64 | #define L2_GPIO_Port GPIOA
+      |                      ^~~~~
+../Core/Src/main.c:22:32: note: in expansion of macro 'L2_GPIO_Port'
+   22 | uint16_t leds[]={L10_GPIO_Port,L2_GPIO_Port,L3_GPIO_Port,
+      |                                ^~~~~~~~~~~~
+../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103x6.h:650:29: warning: initialization of 'short unsigned int' from 'GPIO_TypeDef *' {aka 'struct <anonymous> *'} makes integer from pointer without a cast [-Wint-conversion]
+  650 | #define GPIOA               ((GPIO_TypeDef *)GPIOA_BASE)
+      |                             ^
+../Core/Inc/main.h:66:22: note: in expansion of macro 'GPIOA'
+   66 | #define L3_GPIO_Port GPIOA
+      |                      ^~~~~
+../Core/Src/main.c:22:45: note: in expansion of macro 'L3_GPIO_Port'
+   22 | uint16_t leds[]={L10_GPIO_Port,L2_GPIO_Port,L3_GPIO_Port,
+      |                                             ^~~~~~~~~~~~
+../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103x6.h:650:29: note: (near initialization for 'leds[2]')
+  650 | #define GPIOA               ((GPIO_TypeDef *)GPIOA_BASE)
+      |                             ^
+../Core/Inc/main.h:66:22: note: in expansion of macro 'GPIOA'
+   66 | #define L3_GPIO_Port GPIOA
+      |                      ^~~~~
+../Core/Src/main.c:22:45: note: in expansion of macro 'L3_GPIO_Port'
+   22 | uint16_t leds[]={L10_GPIO_Port,L2_GPIO_Port,L3_GPIO_Port,
+      |                                             ^~~~~~~~~~~~
+../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103x6.h:650:29: warning: initialization of 'short unsigned int' from 'GPIO_TypeDef *' {aka 'struct <anonymous> *'} makes integer from pointer without a cast [-Wint-conversion]
+  650 | #define GPIOA               ((GPIO_TypeDef *)GPIOA_BASE)
+      |                             ^
+../Core/Inc/main.h:68:22: note: in expansion of macro 'GPIOA'
+   68 | #define L4_GPIO_Port GPIOA
+      |                      ^~~~~
+../Core/Src/main.c:23:3: note: in expansion of macro 'L4_GPIO_Port'
+   23 |   L4_GPIO_Port,L5_GPIO_Port,L6_GPIO_Port,
+      |   ^~~~~~~~~~~~
+../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103x6.h:650:29: note: (near initialization for 'leds[3]')
+  650 | #define GPIOA               ((GPIO_TypeDef *)GPIOA_BASE)
+      |                             ^
+../Core/Inc/main.h:68:22: note: in expansion of macro 'GPIOA'
+   68 | #define L4_GPIO_Port GPIOA
+      |                      ^~~~~
+../Core/Src/main.c:23:3: note: in expansion of macro 'L4_GPIO_Port'
+   23 |   L4_GPIO_Port,L5_GPIO_Port,L6_GPIO_Port,
+      |   ^~~~~~~~~~~~
+../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103x6.h:650:29: warning: initialization of 'short unsigned int' from 'GPIO_TypeDef *' {aka 'struct <anonymous> *'} makes integer from pointer without a cast [-Wint-conversion]
+  650 | #define GPIOA               ((GPIO_TypeDef *)GPIOA_BASE)
+      |                             ^
+../Core/Inc/main.h:70:22: note: in expansion of macro 'GPIOA'
+   70 | #define L5_GPIO_Port GPIOA
+      |                      ^~~~~
+../Core/Src/main.c:23:16: note: in expansion of macro 'L5_GPIO_Port'
+   23 |   L4_GPIO_Port,L5_GPIO_Port,L6_GPIO_Port,
+      |                ^~~~~~~~~~~~
+../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103x6.h:650:29: note: (near initialization for 'leds[4]')
+  650 | #define GPIOA               ((GPIO_TypeDef *)GPIOA_BASE)
+      |                             ^
+../Core/Inc/main.h:70:22: note: in expansion of macro 'GPIOA'
+   70 | #define L5_GPIO_Port GPIOA
+      |                      ^~~~~
+../Core/Src/main.c:23:16: note: in expansion of macro 'L5_GPIO_Port'
+   23 |   L4_GPIO_Port,L5_GPIO_Port,L6_GPIO_Port,
+      |                ^~~~~~~~~~~~
+../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103x6.h:650:29: warning: initialization of 'short unsigned int' from 'GPIO_TypeDef *' {aka 'struct <anonymous> *'} makes integer from pointer without a cast [-Wint-conversion]
+  650 | #define GPIOA               ((GPIO_TypeDef *)GPIOA_BASE)
+      |                             ^
+../Core/Inc/main.h:72:22: note: in expansion of macro 'GPIOA'
+   72 | #define L6_GPIO_Port GPIOA
+      |                      ^~~~~
+../Core/Src/main.c:23:29: note: in expansion of macro 'L6_GPIO_Port'
+   23 |   L4_GPIO_Port,L5_GPIO_Port,L6_GPIO_Port,
+      |                             ^~~~~~~~~~~~
+../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103x6.h:650:29: note: (near initialization for 'leds[5]')
+  650 | #define GPIOA               ((GPIO_TypeDef *)GPIOA_BASE)
+      |                             ^
+../Core/Inc/main.h:72:22: note: in expansion of macro 'GPIOA'
+   72 | #define L6_GPIO_Port GPIOA
+      |                      ^~~~~
+../Core/Src/main.c:23:29: note: in expansion of macro 'L6_GPIO_Port'
+   23 |   L4_GPIO_Port,L5_GPIO_Port,L6_GPIO_Port,
+      |                             ^~~~~~~~~~~~
+../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103x6.h:650:29: warning: initialization of 'short unsigned int' from 'GPIO_TypeDef *' {aka 'struct <anonymous> *'} makes integer from pointer without a cast [-Wint-conversion]
+  650 | #define GPIOA               ((GPIO_TypeDef *)GPIOA_BASE)
+      |                             ^
+../Core/Inc/main.h:74:22: note: in expansion of macro 'GPIOA'
+   74 | #define L7_GPIO_Port GPIOA
+      |                      ^~~~~
+../Core/Src/main.c:24:3: note: in expansion of macro 'L7_GPIO_Port'
+   24 |   L7_GPIO_Port,L8_GPIO_Port,L9_GPIO_Port,
+      |   ^~~~~~~~~~~~
+../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103x6.h:650:29: note: (near initialization for 'leds[6]')
+  650 | #define GPIOA               ((GPIO_TypeDef *)GPIOA_BASE)
+      |                             ^
+../Core/Inc/main.h:74:22: note: in expansion of macro 'GPIOA'
+   74 | #define L7_GPIO_Port GPIOA
+      |                      ^~~~~
+../Core/Src/main.c:24:3: note: in expansion of macro 'L7_GPIO_Port'
+   24 |   L7_GPIO_Port,L8_GPIO_Port,L9_GPIO_Port,
+      |   ^~~~~~~~~~~~
+../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103x6.h:650:29: warning: initialization of 'short unsigned int' from 'GPIO_TypeDef *' {aka 'struct <anonymous> *'} makes integer from pointer without a cast [-Wint-conversion]
+  650 | #define GPIOA               ((GPIO_TypeDef *)GPIOA_BASE)
+      |                             ^
+../Core/Inc/main.h:76:22: note: in expansion of macro 'GPIOA'
+   76 | #define L8_GPIO_Port GPIOA
+      |                      ^~~~~
+../Core/Src/main.c:24:16: note: in expansion of macro 'L8_GPIO_Port'
+   24 |   L7_GPIO_Port,L8_GPIO_Port,L9_GPIO_Port,
+      |                ^~~~~~~~~~~~
+../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103x6.h:650:29: note: (near initialization for 'leds[7]')
+  650 | #define GPIOA               ((GPIO_TypeDef *)GPIOA_BASE)
+      |                             ^
+../Core/Inc/main.h:76:22: note: in expansion of macro 'GPIOA'
+   76 | #define L8_GPIO_Port GPIOA
+      |                      ^~~~~
+../Core/Src/main.c:24:16: note: in expansion of macro 'L8_GPIO_Port'
+   24 |   L7_GPIO_Port,L8_GPIO_Port,L9_GPIO_Port,
+      |                ^~~~~~~~~~~~
+../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103x6.h:650:29: warning: initialization of 'short unsigned int' from 'GPIO_TypeDef *' {aka 'struct <anonymous> *'} makes integer from pointer without a cast [-Wint-conversion]
+  650 | #define GPIOA               ((GPIO_TypeDef *)GPIOA_BASE)
+      |                             ^
+../Core/Inc/main.h:78:22: note: in expansion of macro 'GPIOA'
+   78 | #define L9_GPIO_Port GPIOA
+      |                      ^~~~~
+../Core/Src/main.c:24:29: note: in expansion of macro 'L9_GPIO_Port'
+   24 |   L7_GPIO_Port,L8_GPIO_Port,L9_GPIO_Port,
+      |                             ^~~~~~~~~~~~
+../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103x6.h:650:29: note: (near initialization for 'leds[8]')
+  650 | #define GPIOA               ((GPIO_TypeDef *)GPIOA_BASE)
+      |                             ^
+../Core/Inc/main.h:78:22: note: in expansion of macro 'GPIOA'
+   78 | #define L9_GPIO_Port GPIOA
+      |                      ^~~~~
+../Core/Src/main.c:24:29: note: in expansion of macro 'L9_GPIO_Port'
+   24 |   L7_GPIO_Port,L8_GPIO_Port,L9_GPIO_Port,
+      |                             ^~~~~~~~~~~~
+../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103x6.h:650:29: warning: initialization of 'short unsigned int' from 'GPIO_TypeDef *' {aka 'struct <anonymous> *'} makes integer from pointer without a cast [-Wint-conversion]
+  650 | #define GPIOA               ((GPIO_TypeDef *)GPIOA_BASE)
+      |                             ^
+../Core/Inc/main.h:80:23: note: in expansion of macro 'GPIOA'
+   80 | #define L10_GPIO_Port GPIOA
+      |                       ^~~~~
+../Core/Src/main.c:25:3: note: in expansion of macro 'L10_GPIO_Port'
+   25 |   L10_GPIO_Port,L11_GPIO_Port,L12_GPIO_Port
+      |   ^~~~~~~~~~~~~
+../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103x6.h:650:29: note: (near initialization for 'leds[9]')
+  650 | #define GPIOA               ((GPIO_TypeDef *)GPIOA_BASE)
+      |                             ^
+../Core/Inc/main.h:80:23: note: in expansion of macro 'GPIOA'
+   80 | #define L10_GPIO_Port GPIOA
+      |                       ^~~~~
+../Core/Src/main.c:25:3: note: in expansion of macro 'L10_GPIO_Port'
+   25 |   L10_GPIO_Port,L11_GPIO_Port,L12_GPIO_Port
+      |   ^~~~~~~~~~~~~
+../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103x6.h:650:29: warning: initialization of 'short unsigned int' from 'GPIO_TypeDef *' {aka 'struct <anonymous> *'} makes integer from pointer without a cast [-Wint-conversion]
+  650 | #define GPIOA               ((GPIO_TypeDef *)GPIOA_BASE)
+      |                             ^
+../Core/Inc/main.h:82:23: note: in expansion of macro 'GPIOA'
+   82 | #define L11_GPIO_Port GPIOA
+      |                       ^~~~~
+../Core/Src/main.c:25:17: note: in expansion of macro 'L11_GPIO_Port'
+   25 |   L10_GPIO_Port,L11_GPIO_Port,L12_GPIO_Port
+      |                 ^~~~~~~~~~~~~
+../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103x6.h:650:29: note: (near initialization for 'leds[10]')
+  650 | #define GPIOA               ((GPIO_TypeDef *)GPIOA_BASE)
+      |                             ^
+../Core/Inc/main.h:82:23: note: in expansion of macro 'GPIOA'
+   82 | #define L11_GPIO_Port GPIOA
+      |                       ^~~~~
+../Core/Src/main.c:25:17: note: in expansion of macro 'L11_GPIO_Port'
+   25 |   L10_GPIO_Port,L11_GPIO_Port,L12_GPIO_Port
+      |                 ^~~~~~~~~~~~~
+../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103x6.h:650:29: warning: initialization of 'short unsigned int' from 'GPIO_TypeDef *' {aka 'struct <anonymous> *'} makes integer from pointer without a cast [-Wint-conversion]
+  650 | #define GPIOA               ((GPIO_TypeDef *)GPIOA_BASE)
+      |                             ^
+../Core/Inc/main.h:84:23: note: in expansion of macro 'GPIOA'
+   84 | #define L12_GPIO_Port GPIOA
+      |                       ^~~~~
+../Core/Src/main.c:25:31: note: in expansion of macro 'L12_GPIO_Port'
+   25 |   L10_GPIO_Port,L11_GPIO_Port,L12_GPIO_Port
+      |                               ^~~~~~~~~~~~~
+../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103x6.h:650:29: note: (near initialization for 'leds[11]')
+  650 | #define GPIOA               ((GPIO_TypeDef *)GPIOA_BASE)
+      |                             ^
+../Core/Inc/main.h:84:23: note: in expansion of macro 'GPIOA'
+   84 | #define L12_GPIO_Port GPIOA
+      |                       ^~~~~
+../Core/Src/main.c:25:31: note: in expansion of macro 'L12_GPIO_Port'
+   25 |   L10_GPIO_Port,L11_GPIO_Port,L12_GPIO_Port
+      |                               ^~~~~~~~~~~~~
+arm-none-eabi-gcc -o "LAB 1.6.1.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\New folder (2)\LAB 1\Code\LAB 1.6.1\STM32F103C6UX_FLASH.ld" --specs=nosys.specs -Wl,-Map="LAB 1.6.1.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: LAB 1.6.1.elf
+ 
+arm-none-eabi-size   LAB\ 1.6.1.elf 
+arm-none-eabi-objdump -h -S  LAB\ 1.6.1.elf  > "LAB 1.6.1.list"
+arm-none-eabi-objcopy  -O ihex  LAB\ 1.6.1.elf  "LAB 1.6.1.hex"
+   text	   data	    bss	    dec	    hex	filename
+   4776	     20	   1572	   6368	   18e0	LAB 1.6.1.elf
+arm-none-eabi-objcopy  -O binary  LAB\ 1.6.1.elf  "LAB 1.6.1.bin"
+Finished building: default.size.stdout
+ 
+Finished building: LAB 1.6.1.hex
+Finished building: LAB 1.6.1.bin
+ 
+Finished building: LAB 1.6.1.list
+ 
+ 
+
+01:54:35 Build Finished. 0 errors, 12 warnings. (took 1s.155ms)
+

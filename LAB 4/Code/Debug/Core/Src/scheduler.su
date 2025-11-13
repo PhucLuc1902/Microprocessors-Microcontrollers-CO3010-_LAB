@@ -1,0 +1,14 @@
+scheduler.c:27:23:rq_next	16	static
+scheduler.c:28:23:rq_empty	4	static
+scheduler.c:29:13:rq_push_from_isr	24	static
+scheduler.c:34:16:rq_pop_from_main	16	static
+scheduler.c:40:16:alloc_slot	16	static
+scheduler.c:51:16:find_index_by_id	24	static
+scheduler.c:58:13:insert_with_delay	32	static
+scheduler.c:72:13:remove_from_wait_list	24	static
+scheduler.c:80:6:SCH_Init	8	static,ignoring_inline_asm
+scheduler.c:86:10:SCH_Add_Task	32	static,ignoring_inline_asm
+scheduler.c:93:9:SCH_Delete_Task	24	static,ignoring_inline_asm
+scheduler.c:103:6:SCH_Update	16	static
+scheduler.c:114:6:SCH_Dispatch_Tasks	16	static,ignoring_inline_asm
+scheduler.c:126:10:SCH_GetTimeMs	16	static,ignoring_inline_asm
